@@ -1,20 +1,6 @@
 ---@type MappingsTable
 local M = {}
 
-M.myMappings = {
-  n = {
-    ["<space>"] = { ":", "enter command mode", opts = { nowait = true } },
-    ["o"] = { "o<esc>", "open a new line below" },
-    ["O"] = { "O<esc>", "open a new line above" },
-    ["n"] = { "nzz", "center cursor vertically during search" },
-    ["N"] = { "Nzz", "center cursor vertically during search (reverse)" },
-    ["J"] = { "mzJ`z", "Join line with line below" },
-    ["<C-d>"] = { "<C-d>zz", "Scroll screen down and center cursor" },
-    ["<C-u>"] = { "<C-u>zz", "Scroll screen up and center cursor" },
-    ["<C-A-d>"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace" },
-  },
-}
-
 M.general = {
   i = {
     -- ["<c-c>"] = { '"+y', " ", opts = { nowait = true } },
@@ -69,6 +55,22 @@ M.whichkey = {
   n = {
     ["<leader>o"] = { "<cmd> NvimTreeFocus <CR>", "Focus Sidebar" },
     -- ["<leader>r"] = { name = "+Run" },
+  },
+}
+
+M.myMappings = {
+  n = {
+    ["<space>"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["o"] = { "o<esc>", "open a new line below" },
+    ["O"] = { "O<esc>", "open a new line above" },
+    ["n"] = { "nzz", "center cursor vertically during search" },
+    ["N"] = { "Nzz", "center cursor vertically during search (reverse)" },
+    ["J"] = { "mzJ`z", "Join line with line below" },
+    ["<C-d>"] = { "<C-d>zz", "Scroll screen down and center cursor" },
+    ["<C-u>"] = { "<C-u>zz", "Scroll screen up and center cursor" },
+    ["<C-A-d>"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace" },
+    ["<leader>fs"] = { "<CMD>Telescope lsp_document_symbols<CR>", "Show outline" },
+    ["<C-p>"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find all" },
   },
 }
 
