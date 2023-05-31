@@ -82,7 +82,7 @@ mv ~/.config/nvim/lua/custom/ ~/.config/nvim/lua/custom_backup
 ```
 - Clone Config Baru
 ```
-git clone https://github.com/pojokcodeid/NvChad-v2-config ~/.config/nvim/lua/custom
+git clone https://github.com/Richie-Z/nvchad-config.git ~/.config/nvim/lua/custom
 ```
 ## Config Windows
 - Rename Config Original
@@ -91,6 +91,6 @@ Rename-Item "$env:LOCALAPPDATA\nvim\lua\custom" "$env:LOCALAPPDATA\nvim\lua\cust
 ```
 - Clone Config Baru
 ```
-git clone https://github.com/pojokcodeid/NvChad-v2-config "$env:LOCALAPPDATA\nvim\lua\custom"
+git clone https://github.com/Richie-Z/nvchad-config.git "$env:LOCALAPPDATA\nvim\lua\custom"
 ```
 
