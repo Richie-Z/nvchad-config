@@ -32,6 +32,7 @@ local lpath = vim.fn.stdpath "config" .. "/lua/custom/my-snippets"
 vim.g.vscode_snippets_path = lpath
 vim.g.snipmate_snippets_path = lpath
 
+vim.api.nvim_set_keymap("n", "<Leader>x", "<Plug>(easymotion-prefix)", {})
 -- autocmd("VimEnter",{
 --   pattern="*",
 --   command="Nvdash",

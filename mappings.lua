@@ -71,6 +71,7 @@ M.myMappings = {
     ["<C-A-d>"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace" },
     ["<leader>fs"] = { "<CMD>Telescope lsp_document_symbols<CR>", "Show outline" },
     ["<C-p>"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find all" },
+    -- ["<leader>x"] = { "<Plug>(easymotion-prefix)", "EasyMotion Prefix" },
   },
 }
 
