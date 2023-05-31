@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "onedark",
-  theme_toggle = { "onedark", "one_light" },
+  theme = "ayu_dark",
+  theme_toggle = { "ayu_dark", "one_light" },
   hl_override = highlights.override,
   hl_add = highlights.add,
   nvdash = {
@@ -25,7 +25,7 @@ M.ui = {
       --     "            Pojok Code           ",
     },
   },
-  transparency = false,
+  transparency = true,
 }
 
 M.plugins = "custom.plugins"
