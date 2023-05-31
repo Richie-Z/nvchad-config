@@ -6,26 +6,21 @@ local highlights = require "custom.highlights"
 
 M.ui = {
   theme = "ayu_dark",
-  theme_toggle = { "ayu_dark", "one_light" },
+  theme_toggle = { "ayu_dark", "ayu_dark" },
   hl_override = highlights.override,
   hl_add = highlights.add,
   nvdash = {
     load_on_startup = true,
     header = {
-      "           ▄ ▄                   ",
-      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
-      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
-      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
-      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
-      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
-      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
-      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
-      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
-      --     "                                 ",
-      --     "            Pojok Code           ",
+      "______ _      _     _           ______",
+      "| ___ (_)    | |   (_)         |___  /",
+      "| |_/ /_  ___| |__  _  ___ ______ / / ",
+      "|    /| |/ __| '_ \\| |/ _ \\______/ /  ",
+      "| |\\ \\| | (__| | | | |  __/    ./ /___",
+      "\\_| \\_|_|\\___|_| |_|_|\\___|    \\_____/",
     },
   },
-  transparency = true,
+  transparency = false,
 }
 
 M.plugins = "custom.plugins"

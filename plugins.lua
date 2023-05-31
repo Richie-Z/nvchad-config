@@ -494,6 +494,15 @@ local plugins = {
   -- for cmd line popup
   cmdline,
   toggleterm,
+
+  { "easymotion/vim-easymotion", lazy = false },
+  { "justinmk/vim-sneak", lazy = false },
+  { "tpope/vim-surround", lazy = false },
+  { "folke/twilight.nvim" },
+  {
+    "folke/zen-mode.nvim",
+    cmd = { "ZenMode" },
+  },
 }
 
 return plugins
