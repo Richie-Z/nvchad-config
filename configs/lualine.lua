@@ -50,8 +50,7 @@ local diff = {
 local mode = {
   "mode",
   fmt = function(str)
-    -- return "-- " .. str .. " --"
-    return str
+    return "☛ " .. str
   end,
 }
 
@@ -90,6 +89,11 @@ end
 
 local file_name = {
   "filename",
+  cond = conditions.buffer_not_empty,
+}
+
+local file_size = {
+  "filesize",
   cond = conditions.buffer_not_empty,
 }
 
@@ -173,7 +177,7 @@ local lsp_info = {
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = "onedark",
+    theme = "ayu_dark",
     --theme = "auto",
     -- component_separators = { left = "", right = "" },
     -- section_separators = { left = "", right = "" },
@@ -201,12 +205,12 @@ lualine.setup {
     always_divide_middle = true,
   },
   sections = {
-    lualine_a = { branch },
-    lualine_b = { mode },
+    lualine_a = { mode },
+    lualine_b = { branch },
     lualine_c = { diagnostics, lsp_info },
     -- lualine_c = { file_name, lsp_info },
     -- lualine_x = { "encoding", "fileformat", "filetype" },
-    lualine_x = { diff, spaces, "encoding", filetype },
+    lualine_x = { diff, spaces, "encoding", filetype, file_size },
     lualine_y = { location },
     lualine_z = { progress },
   },
