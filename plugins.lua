@@ -336,13 +336,13 @@ local plugins = {
       require "custom.configs.alpha"
     end,
   },
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "BufRead",
-    config = function()
-      require "custom.configs.lualine"
-    end,
-  },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   event = "BufRead",
+  --   config = function()
+  --     require "custom.configs.lualine"
+  --   end,
+  -- },
   { "hrsh7th/cmp-nvim-lsp", event = "BufRead" },
   { "hrsh7th/cmp-buffer", event = "BufRead" },
   { "hrsh7th/cmp-path", event = "BufRead" },

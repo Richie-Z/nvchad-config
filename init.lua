@@ -16,21 +16,21 @@ autocmd("VimResized", {
   command = "tabdo wincmd =",
 })
 
-autocmd("VimEnter", {
-  pattern = "*",
-  callback = function()
-    vim.opt.statusline = "%#normal# "
-  end,
-})
+-- autocmd("VimEnter", {
+--   pattern = "*",
+--   callback = function()
+--     vim.opt.statusline = "%#normal# "
+--   end,
+-- })
 
 local opt = vim.opt
 opt.cmdheight = 0
 
 require "custom.configs.format_onsave"
 
-local lpath = vim.fn.stdpath "config" .. "/lua/custom/my-snippets"
-vim.g.vscode_snippets_path = lpath
-vim.g.snipmate_snippets_path = lpath
+-- local lpath = vim.fn.stdpath "config" .. "/lua/custom/my-snippets"
+-- vim.g.vscode_snippets_path = lpath
+-- vim.g.snipmate_snippets_path = lpath
 
 vim.api.nvim_set_keymap("n", "<Leader>x", "<Plug>(easymotion-prefix)", {})
 -- autocmd("VimEnter",{
@@ -39,12 +39,12 @@ vim.api.nvim_set_keymap("n", "<Leader>x", "<Plug>(easymotion-prefix)", {})
 -- })
 
 -- autocmd("WinEnter", {
---    pattern = "*",
---    callback = function()
---       if vim.bo.buftype ~= "terminal" then
---          vim.opt.statusline = "%!v:lua.require'ui.statusline'.run()"
---       else
---          vim.opt.statusline = "%#normal# "
---       end
---    end,
+--   pattern = "*",
+--   callback = function()
+--     if vim.bo.buftype ~= "terminal" then
+--       vim.opt.statusline = "%!v:lua.require'ui.statusline'.run()"
+--     else
+--       vim.opt.statusline = "%#normal# "
+--     end
+--   end,
 -- })

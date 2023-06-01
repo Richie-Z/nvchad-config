@@ -17,8 +17,8 @@ M.general = {
     ["<A-j>"] = { ":m .+1<CR>==", " ", opts = { nowait = true } },
     ["<A-k>"] = { ":m .-2<CR>==", " ", opts = { nowait = true } },
     ["p"] = { '"_dP', " ", opts = { nowait = true } },
-    ["<c-c>"] = { '"+y', " ", opts = { nowait = true } },
-    ["<c-v>"] = { '"+p', " ", opts = { nowait = true } },
+    -- ["<c-c>"] = { '"+y', " ", opts = { nowait = true } },
+    -- ["<c-v>"] = { '"+p', " ", opts = { nowait = true } },
     ["J"] = { ":move '>+1<CR>gv-gv", " ", opts = { nowait = true } },
     ["K"] = { ":move '<-2<CR>gv-gv", " ", opts = { nowait = true } },
     -- ["<A-j>"] = { ":move '>+1<CR>gv-gv", " ", opts = { nowait = true } },
@@ -30,8 +30,8 @@ M.general = {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
-    ["<c-c>"] = { '"+y', " ", opts = { nowait = true } },
-    ["<c-v>"] = { '"+p', " ", opts = { nowait = true } },
+    -- ["<c-c>"] = { '"+y', " ", opts = { nowait = true } },
+    -- ["<c-v>"] = { '"+p', " ", opts = { nowait = true } },
     ["<S-Down>"] = { "<cmd>t.<cr>", " ", opts = { nowait = true } },
     ["<S-Up>"] = { "<cmd>t -1<cr>", " ", opts = { nowait = true } },
     ["<M-J>"] = { "<cmd>t.<cr>", " ", opts = { nowait = true } },
@@ -71,6 +71,8 @@ M.myMappings = {
     ["<C-A-d>"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace" },
     ["<leader>fs"] = { "<CMD>Telescope lsp_document_symbols<CR>", "Show outline" },
     ["<C-p>"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find all" },
+    ["<Tab>"] = { "<cmd> Telescope buffers <CR>", "Find in current buffer" },
+    ["<M-o>"] = { "<cmd> Telescope lsp_document_symbols<CR>", "Find outline" },
     -- ["<leader>x"] = { "<Plug>(easymotion-prefix)", "EasyMotion Prefix" },
   },
 }
