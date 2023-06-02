@@ -40,7 +40,8 @@ M.general = {
     ["<M-Up>"] = { "<cmd>m-2<cr>", " ", opts = { nowait = true } },
     ["<M-j>"] = { "<cmd>m+<cr>", " ", opts = { nowait = true } },
     ["<M-k>"] = { "<cmd>m-2<cr>", " ", opts = { nowait = true } },
-    ["<C-f>"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", " ", opts = { nowait = true } },
+    ["<C-i>"] = { "<C-i>", " ", opts = { noremap = true } },
+    -- ["<C-f>"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", " ", opts = { nowait = true } },
     -- ["q"] = { "<cmd>q<cr>", " ", opts = { nowait = true } },
     -- ["<leader>bb"] = { "<cmd>tabnew<cr>", " ", opts = { nowait = true } },
     -- ["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", " ", opts = { nowait = true } },
@@ -68,12 +69,15 @@ M.myMappings = {
     ["J"] = { "mzJ`z", "Join line with line below" },
     ["<C-d>"] = { "<C-d>zz", "Scroll screen down and center cursor" },
     ["<C-u>"] = { "<C-u>zz", "Scroll screen up and center cursor" },
-    ["<C-A-d>"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace" },
+    ["<C-A-l>"] = { [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace" },
     ["<leader>fs"] = { "<CMD>Telescope lsp_document_symbols<CR>", "Show outline" },
     ["<C-p>"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find all" },
-    ["<Tab>"] = { "<cmd> Telescope buffers <CR>", "Find in current buffer" },
+    -- ["<Tab>"] = { "<cmd> Telescope buffers <CR>", "Find in current buffer" },
     ["<M-o>"] = { "<cmd> Telescope lsp_document_symbols<CR>", "Find outline" },
     -- ["<leader>x"] = { "<Plug>(easymotion-prefix)", "EasyMotion Prefix" },
+  },
+  v = {
+    ["<space>"] = { ":", "enter command mode", opts = { nowait = true } },
   },
 }
 

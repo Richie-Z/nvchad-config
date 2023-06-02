@@ -138,7 +138,7 @@ return {
     BoldQuestion = "",
     Question = "",
     BoldHint = "",
-    Hint = "",
+    Hint = "",
     Debug = "",
     Trace = "✎",
   },

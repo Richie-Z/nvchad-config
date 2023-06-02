@@ -19,6 +19,14 @@ M.ui = {
       "| |\\ \\| | (__| | | | |  __/    ./ /___",
       "\\_| \\_|_|\\___|_| |_|_|\\___|    \\_____/",
     },
+    buttons = {
+      { "  Find File", "<leader> f f", "Telescope find_files" },
+      { "󰈚  Recent Files", "<leader> f o", "Telescope oldfiles" },
+      { "󰈭  Find Word", "<leader> f w", "Telescope live_grep" },
+      { "  Bookmarks", "<leader> m a", "Telescope marks" },
+      { "  Themes", "<leader> t h", "Telescope themes" },
+      { "  Mappings", "<leader> c h", "NvCheatsheet" },
+    },
   },
   transparency = false,
   tabufline = {
